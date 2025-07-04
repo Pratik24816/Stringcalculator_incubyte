@@ -8,8 +8,11 @@ public class StringCalculator {
         }
 
 
-        if(numbers.contains(",")){
-            String[] apart = numbers.split(",");
+
+        if(numbers.contains(",") || numbers.contains("\n")){
+
+            String normalizedNumbers = numbers.replace("\n", ",");
+            String[] apart = normalizedNumbers.split(",");
             int sum=0;
             for(String part : apart){
                 sum += Integer.parseInt(part);
