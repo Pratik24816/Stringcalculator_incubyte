@@ -24,4 +24,10 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         assertEquals(6, calculator.add("1,5"));
     }
+
+    @Test
+    public void HandleMultipleNumbers(){
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(30,calculator.add("2,4,8,6,10"));
+    }
 }
