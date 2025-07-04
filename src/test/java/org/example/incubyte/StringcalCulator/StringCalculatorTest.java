@@ -30,4 +30,9 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         assertEquals(30,calculator.add("2,4,8,6,10"));
     }
+    @Test
+    public void HandleNewlinesBetweenNumbers(){
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.add("1\n2,3"));
+    }
 }

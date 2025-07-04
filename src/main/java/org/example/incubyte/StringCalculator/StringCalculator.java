@@ -7,6 +7,7 @@ public class StringCalculator {
             return 0;
         }
 
+
         if(numbers.contains(",")){
             String[] apart = numbers.split(",");
             int sum=0;
